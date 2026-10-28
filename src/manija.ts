@@ -1,7 +1,7 @@
 export function generarLorem(n: number):string {
   let loremcito = "lorem ipsum"
    if (n > 1){
-    return generarLorem(n-1)
+    return "lorem ipsum" + " "+ generarLorem(n-1)
   }
   else if (n < 1){
     return ""
