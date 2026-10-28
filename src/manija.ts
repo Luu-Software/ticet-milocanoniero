@@ -1,12 +1,14 @@
 export function generarLorem(n: number):string {
-   if (n >= 1){
-    return generarLorem (n-1) * n
+  let loremcito = "lorem ipsum"
+   if (n > 1){
+    return generarLorem(n-1)
   }
-  else if (n <= 0){
-    return ("")
-  }
-  else{
+  else if (n < 1){
     return ""
   }
+  else{
+    return "lorem ipsum"
   }
-console.log(generarLorem(5));
+  }
+let lorem = ("lorem ipsum")
+console.log(generarLorem(5)+".");
